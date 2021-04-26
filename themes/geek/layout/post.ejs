@@ -1,17 +1,18 @@
 <div class="hd posts">
-    <a href="<%= config.root %>"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
-    <div class="post-title">
-        <p>
-            <%= page.title %>
-        </p>
-        <hr>
-    </div>
-    <div class="post-content">
-        <%- page.content %>
-    </div>
+	<a href="<%= config.root %>"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
+	<div class="post-title">
+		<p><%= page.title %></p>
+		<hr />
+	</div>
+	<div class="post-content"><%- page.content %></div>
 
-    <% if (theme.valine.enable && page.comments) { %>
-        <hr class="fhr">
-        <div id="vcomments"></div>
-    <% } %>
+	<% if (theme.valine.enable && page.comments) { %>
+
+	<div id="<%- url_for(page.path) %>" class="leancloud_visitors">
+		<em class="post-meta-item-text"><i class="fa fa-eye" aria-hidden="true"></i> 本文阅读量: </em>
+		<i class="leancloud-visitors-count"><i class="fa fa-spinner fa-spin fa-1x fa-fw"></i></i>
+	</div>
+	<hr class="fhr" />
+	<div id="vcomments"></div>
+	<% } %>
 </div>

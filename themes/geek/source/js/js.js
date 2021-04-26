@@ -7,7 +7,8 @@ new Valine({
     appId: valine_appid,
     appKey: valine_appKey,
     placeholder: '请输入内容...',
-    avatar: "wavatar"
+    avatar: "wavatar",
+    visitor: true
 })
 
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -62,5 +63,3 @@ $("#update_style").change(function() {
         updateStyle();
     }
 });
-
-$(".el-copyright-year").text(`2020-${new Date().getFullYear()}`)
