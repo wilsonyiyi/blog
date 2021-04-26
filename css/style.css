@@ -115,8 +115,11 @@ hr {
 .posts .post-content a {
   color: #699be9;
 }
-.posts .fhr {
+.posts .leancloud_visitors {
   margin-top: 60px;
+}
+.posts .fhr {
+  margin-top: 10px;
 }
 .posts .highlight .gutter .hljs {
   border-top-left-radius: 5px;
