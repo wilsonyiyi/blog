@@ -18,7 +18,7 @@ a:hover {
 }
 .footer {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 100px;
   color: #ccc;
 }
 .clear {
@@ -69,7 +69,6 @@ a:hover {
   font-weight: bold;
   font-size: 24px;
   margin-top: -10px;
-  margin-bottom: -20px;
 }
 .logot .logo_1 {
   color: #888;
@@ -104,17 +103,20 @@ hr {
   border-radius: 100%;
   position: absolute;
 }
+.posts .replay-btn:hover {
+  opacity: 0.6;
+}
 .posts .post-title {
   text-align: center;
   font-size: 24px;
   line-height: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .posts .post-content a {
   color: #699be9;
 }
 .posts .fhr {
-  margin-top: 20px;
+  margin-top: 60px;
 }
 .posts .highlight .gutter .hljs {
   border-top-left-radius: 5px;
@@ -1204,7 +1206,7 @@ label.el-checkbox {
 .breadcrumb>li+li:before {
   padding: 0 5px;
   color: #ccc;
-  content: "&\00a0";
+  content: "/\00a0";
 }
 .breadcrumb>.active {
   color: #777;
