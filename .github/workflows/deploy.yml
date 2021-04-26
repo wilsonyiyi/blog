@@ -25,12 +25,12 @@ jobs:
           node-version: '12.x'
 
       - name: Cache NPM dependencies
-          uses: actions/cache@v2
-          with:
-            path: node_modules
-            key: ${{ runner.OS }}-npm-cache
-            restore-keys: |
-              ${{ runner.OS }}-npm-cache
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-npm-cache
+          restore-keys: |
+            ${{ runner.OS }}-npm-cache
               
       - run: npm install
       - run: npm run build
